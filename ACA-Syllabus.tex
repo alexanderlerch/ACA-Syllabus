@@ -1,0 +1,188 @@
+\documentclass[letterpaper,oneside,10pt]{scrartcl}
+
+\input{include/config} 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% DOCUMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\title{MUSI 6201/4457: Audio Content Analysis}
+\author{syllabus }
+\date{Fall 2023} %%If commented, the current date is used.
+\maketitle
+
+\pagestyle{plain} %Now display headings: headings / fancy / ...
+
+\section*{Course Details}
+    \begin{tabular}{ll}
+        \textbf{class time} & MW 3:00--4:15pm \\
+        \textbf{location} & West Village 163\\
+        \textbf{credits} & 3 credit hours
+    \end{tabular}
+\section*{Instructor Information}
+    \begin{tabular}{lp{70mm}l}
+        \textbf{} & \textbf{instructor} & \\%\textbf{teaching assistant}\\
+        \textbf{name} & Alexander Lerch & \\%Ashis Pati, Siddharth Gururani \\
+        \textbf{email} & \url{alexander.lerch@gatech.edu} & \\%\url{{ashis.pati,siddgururani}@gatech.edu} \\
+        \textbf{location} & Couch 205 (840 McMillan St) & \\
+        \textbf{office hours} & {by appointment\newline (\url{https://calendly.com/alexanderlerch})} & \\
+    \end{tabular}
+        
+         
+\section{General Information}        
+    \subsection{Course Description}
+        Introduction to the software-based analysis of digital music signals. This course covers the basic approaches for musical content analysis and teaches students to approach this class of problems and think algorithmically. Topics include pitch tracking, beat tracking, audio feature extraction, and genre classification. The classes focus is on the audio signal processing part of music information retrieval.
+        
+    \subsection{Prerequisites}
+        The course will be open to any interested students in the Music Tech BS, MS, and PhD programs. Prior coursework or experience in (digital) signal processing and machine learning is expected. Programming experience and familiarity with (Matlab and) Python will be helpful. 
+
+    \subsection{Learning Outcomes}        
+        After successful completion of the class, the students will be able to 
+        \begin{itemize}
+            \item   summarize and explain baseline approaches to typical tasks in Music Information Retrieval,
+            \item   describe and apply evaluation methods and metrics for audio content analysis systems,
+            \item   implement audio analysis systems in Python, and
+            \item   successfully complete a team project in conception, literature survey, proposal, implementation, evaluation, and presentation.
+        \end{itemize}
+
+\section{Grading}
+    The following evaluative tools will be utilized in measuring progress towards obtaining the learning outcomes:
+    \smallskip
+    
+    \begin{tabular}{lll}
+        %\textbf{quizzes} & 20\%\\
+        %\textbf{exercises} & 20\%\\
+        \textbf{exercises \& assignments} & 45\%\\
+        \textbf{exercises \& participation} & 10\%\\
+        \textbf{project} & 45\% \\
+        \quad presentation (proposal) & 5\%\\
+        \quad presentation (midterm) & 5\%\\
+        \quad presentation (final) & 5\%\\
+        \quad paper & 10\%\\
+        \quad algorithmic design and implementation & 20\%\\
+    \end{tabular}
+    
+    \subsection{Description of Graded Components}
+        If not explicitly mentioned otherwise, students in the undergraduate section of the class will work on the same components but with adjusted expectations for grading.
+        \begin{itemize}
+            \item   \textbf{exercises \& assignments: }\\
+                Assignments will be posted according to the tentative schedule outlined in Sect.~\ref{sec:outline}. All assignments will contribute to the assignment grade with equal weight. If in-class exercises are part of the assignments, their grade will be part of the assignment grade. Assignments will be one or two questions shorter for the undergraduate section of the class.
+            %\item   \textbf{exercises: }\\
+                %Exercises will happen regularly and will be handed in after class.
+            %\item   \textbf{quizzes: }\\
+                %Quizzes might take place unannounced at any time during the semester and will assess your understanding of the content of video and in-class lectures. Each student will have one ``joker'', meaning that the worst result will be discarded and will not contribute to the overall grade.
+            \item   \textbf{exercises \& participation:\\}
+                Participation in class and in the forum with questions and answers as well as performance in in-class exercises not part of assignments. 
+            \item   \textbf{project: }\\
+                Each group (3 students) will work on a class project. The core of this project has to be a MIR algorithm developed by the team, but there is no additional restrictions: it might be a research project, an application for a specific task, a web service, etc. 
+        \end{itemize}
+    
+    \subsection{Grading and Grading Policies}
+        \input{include/grading} 
+
+    \section{Course Materials}
+        \subsection{Video Lectures}
+            Videos of a previous iteration of the class are accessible at:\\            
+            \url{https://www.audiocontentanalysis.org/class}
+            
+            The online video player should allow you to switch between slides and camera view.
+            
+        \subsection{Text Book}
+            
+           The text book for this class is available:
+            \begin{quote}
+            Alexander Lerch (2023), \textit{An Introduction to Audio Content Analysis: Music Information Retrieval Tasks and Applications}, 2nd Edition Jon Wiley \& Sons, Hoboken
+            \end{quote}
+            It can be accessed free of charge here (access to this site may be restricted from off-campus, use VPN):\\        
+            \url{https://ieeexplore.ieee.org/book/9965970}
+        
+        %\subsection{Forum}
+            %Questions and answers are encouraged online at:\\ 
+            %\url{http://www.audiocontentanalysis.org/teaching/questions-answers}.
+            
+        \subsection{Additional (Optional) Reading}
+            \begin{itemize}
+                \item    Li, T., Ogihara, M. and Tzanetakis, G. (Eds.) (2012), \textit{Music Data Mining}. CRC Press 
+                \item    Klapuri, A. and Davy, M. (Eds.) (2006), \textit{Signal Processing Methods for Music Transcription}. Springer 
+                \item    Mueller, M. (2015), \textit{Fundamentals of Music Processing}. Springer
+            \end{itemize}
+        
+        \subsection{Additional Resources}
+            Additional resources are available on github. Additional resources include:
+            \begin{itemize}
+                \item   slides (pdf), \url{https://github.com/alexanderlerch/ACA-Slides}
+                \item   links to Matlab code for plots in the slides, \url{https://github.com/alexanderlerch/ACA-Plots}
+                \item   audio examples, \url{https://github.com/alexanderlerch/ACA-Slides/audio}
+            \end{itemize}
+
+        \subsection{Software}
+            \input{include/software} 
+
+\section{Course Expectations \& Guidelines}
+    \subsection{Course Schedule}\label{sec:outline}
+        The class will be structured into the following parts: the lecture, the in-class exercises, the assignments, and the project work. The tentative schedule, subject to change, is shown in Table \ref{tab:schedule}.
+        
+        \bigskip
+        
+        \begin{table}
+		\begin{tabular}{l|p{.3\textwidth}|p{.15\textwidth}|p{.175\textwidth}|p{.23\textwidth}}
+            Week & Topics & Modules & potential in-class exercises & Assignment \& \textit{notes}\\
+            \hline\hline
+            1 & introduction & 0.0, 1.0, 2.0, 3.1 & project topic brainstorm& \\
+            2 &  features & 3.2, 3.3, 3.4, 3.6 & spectrogram, correlation, features & ACF pitch tracking\\
+            3 & inference& 3.7, 4& feature extraction & \textit{labor day}\\  %4
+            4 & data and evaluation & 5, 6 & feature space visualization& feature extraction \& selection\\ %11.
+            5 & project proposals &&& \\ % 18.
+            6 & pitch tracking& 7.1, 7.2, 7.3, & HPS, AMDF& monophonic pitch trackers\\
+            7 & pitch tracking and tuning frequency & 7.3, 7.4 & NMF, tuning freq &\\
+            8 & key/chord detection, intensity & 7.5, 7.6, 8 &pitch chroma&   \textit{fall break}\\
+            9 & mid-term project presentation &&& key/chord detection\\
+            10 & onset,tempo detection& 9.1, 9.2, 9.3, 9.4, 9.5,9.6 & tempo detection & \\ %23.
+            11 & structure, alignment& 9.7, 10 & DTW&\\
+            12 &  genre classification & 12&& genre classification\\
+            13 & audio fingerprinting, music similarity&11,13&& \\
+            14 & mood classification &14& regression& \textit{thxgiving} \\ 
+            15 & music performance assessment &16&& \\ % 
+            16 & project work&&& \\
+            %17 & --&& \\
+            
+		\end{tabular}
+        \caption{planned class schedule}\label{tab:schedule}
+        \end{table}
+
+        \input{include/schedule}
+    
+    \subsection{Academic Integrity}
+        \input{include/integrity}
+
+    \subsection{Accommodations for Individuals with Disabilities}
+        \input{include/disabilities}
+    
+    \subsection{Assignment Turn-In}
+        All assignments and exercises have to be submitted to canvas unless announced otherwise. Each submission should contain source code as well as a document with plots and comments, structured by the tasks/questions as headers.\\
+        The code and code documentation of the project work has to be turned in as a link to a online repository such as github.com or github.gatech.edu. 
+    
+    \subsection{Attendance and Participation}
+        \input{include/attendance}
+        
+    \subsection{Extensions, Late Assignments, Missed Exams}
+        \input{include/extensions}
+
+    \subsection{Student Use of Mobile Devices in the Classroom}
+        \input{include/mobile}
+        
+    \subsection{Student-Faculty Expectations}
+        \input{include/expectations}
+        
+    \subsection{Diversity}
+        \input{include/diversity}
+        
+    \subsection{Grievances and Concerns}
+        \input{include/grievance}
+
+
+\end{document}
+
